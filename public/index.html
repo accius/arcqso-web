@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>ArcQSO — Log. Control. Connect.</title>
+  <meta name="description" content="ArcQSO is a modern cross-platform logging application for amateur radio operators. Desktop logging, rig control, CW and FT8 — plus a focused mobile logbook." />
+  <link rel="icon" href="assets/logo.svg" type="image/svg+xml" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Sora:wght@500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="nav">
+    <div class="wrap nav-inner">
+      <a class="brand" href="#top">
+        <img src="assets/logo.svg" alt="ArcQSO mark" />
+        <span>Arc<b>QSO</b></span>
+      </a>
+      <nav class="nav-links" id="navLinks">
+        <a href="#logging">Logging</a>
+        <a href="#control">Control</a>
+        <a href="#digital">CW & FT8</a>
+        <a href="#contests">Contests</a>
+        <a href="#platforms">Platforms</a>
+      </nav>
+      <a class="nav-cta" href="#download">Download</a>
+      <button class="menu-btn" id="menuBtn" aria-label="Menu">☰</button>
+    </div>
+  </header>
+  <main id="top">
+    <section class="hero">
+      <div class="wave"></div>
+      <div class="wrap hero-grid">
+        <div>
+          <p class="kicker">Modern tools for a more connected amateur radio world</p>
+          <h1>Log. Control.<br /><em>Connect.</em></h1>
+          <p class="lede">A modern desktop logger for the moments when logging has to be fast and mistake-free — special events, contests, park and summit activations, Field Day, and everyday DXing. Mobile apps keep the logbook in your pocket.</p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#download">Get ArcQSO</a>
+            <a class="btn btn-ghost" href="#logging">See how it works</a>
+          </div>
+          <div class="platforms">
+            <span>Windows</span><span>macOS</span><span>Linux</span><span>iPhone</span><span>Android</span>
+          </div>
+        </div>
+        <div class="hero-visual">
+          <div class="app-frame">
+            <div class="app-chrome"><i></i><i></i><i></i></div>
+            <div class="app-head">
+              <strong>ArcQSO</strong>
+              <div class="app-tabs"><span class="on">Logbook</span><span>Radio</span><span>CW</span><span>FT8</span></div>
+            </div>
+            <div class="call-field">K1ABC</div>
+            <div class="call-meta"><span>UTC captured · 14.074 · FT8</span><span>Grid FN42 · United States</span></div>
+            <div class="globe-preview">
+              <div class="arc" style="width:220px;height:220px;left:40px;top:20px;"></div>
+              <div class="arc" style="width:160px;height:160px;left:90px;top:40px;opacity:.7;"></div>
+              <div class="dot" style="left:52%;top:48%;"></div>
+              <div class="dot" style="left:78%;top:28%;"></div>
+            </div>
+          </div>
+          <div class="float-card"><small>Live path</small><strong>Great-circle arc on the globe</strong></div>
+        </div>
+      </div>
+    </section>
+    <section id="logging">
+      <div class="wrap">
+        <div class="section-head">
+          <p class="kicker">Built for the operating table</p>
+          <h2>A logger you can read from across the shack.</h2>
+          <p class="muted">Type a call. UTC is captured. Band, frequency and mode carry forward. Lookups fill the rest while you are still talking.</p>
+        </div>
+        <div class="cards">
+          <article class="card"><div class="icon">◉</div><h3>Giant callsign field</h3><p class="muted">Readable from across the table so a logger sitting next to the operator can keep up without asking for repeats.</p></article>
+          <article class="card"><div class="icon">⌕</div><h3>Instant lookups</h3><p class="muted">QRZ.com, HamQTH or free FCC Callook. Name, location, grid and country fill in automatically. The station photo appears over the map.</p></article>
+          <article class="card"><div class="icon">⚠</div><h3>Dupes flagged now</h3><p class="muted">Duplicates are called out the moment you type the call — before you waste the QSO.</p></article>
+          <article class="card"><div class="icon">🌐</div><h3>3D globe of arcs</h3><p class="muted">Every contact is drawn as a colored great-circle arc. Filter by band to see just 20 m or 40 m.</p></article>
+          <article class="card"><div class="icon">▤</div><h3>As many logs as you need</h3><p class="muted">One per event, per day or per callsign. Change operator anytime. ADIF in and out for LoTW, QRZ, eQSL and everything else.</p></article>
+          <article class="card"><div class="icon">⌘</div><h3>Your data stays yours</h3><p class="muted">Plain JSON files on your machine. No account. No cloud. No subscription. Illustrated manual ships in the installer.</p></article>
+        </div>
+      </div>
+    </section>
+    <section id="control">
+      <div class="wrap split">
+        <div>
+          <p class="kicker">Rig control</p>
+          <h2>The log and the radio stay in lockstep.</h2>
+          <p class="muted">Connect almost any radio through Hamlib rigctld, flrig, or a direct serial CAT port. Frequency and mode follow the radio. Change them in the log and the radio tunes with you.</p>
+          <div class="pill-row">
+            <span class="pill">Kenwood</span><span class="pill">Elecraft</span><span class="pill">Yaesu</span><span class="pill">Icom</span><span class="pill">FlexRadio SmartSDR CAT</span><span class="pill">Hamlib · flrig · serial</span>
+          </div>
+        </div>
+        <div class="card">
+          <h3>Operator-focused, not cluttered</h3>
+          <p class="muted">Desktop carries the full station: logging, rig control, CW keyer and FT8 link. The phone app stays lean — log contacts in the field without dragging the shack with you.</p>
+        </div>
+      </div>
+    </section>
+    <section id="digital">
+      <div class="wrap">
+        <div class="section-head">
+          <p class="kicker">CW & digital</p>
+          <h2>Keyer, decoder, and FT8 in the same window as the log.</h2>
+        </div>
+        <div class="cards">
+          <article class="card"><div class="icon">···−</div><h3>Dedicated CW window</h3><p class="muted">Full keyer with twelve programmable contest macros. Winkeyer, serial and rig-internal keying, plus a sidetone.</p></article>
+          <article class="card"><div class="icon">♫</div><h3>Built-in CW decoder</h3><p class="muted">Listens through the sound card and auto-fills the callsign and report it hears. RBN and CW Skimmer spots on your frequency fill the call before you finish copying it.</p></article>
+          <article class="card"><div class="icon">▦</div><h3>FT8 / FT4 with WSJT-X</h3><p class="muted">Decodes stream in. Call CQ and reply from the logger. Completed contacts land in the log automatically.</p></article>
+        </div>
+      </div>
+    </section>
+    <section id="contests">
+      <div class="wrap">
+        <div class="section-head">
+          <p class="kicker">Contest ready</p>
+          <h2>More than 70 profiles. The form reshapes itself.</h2>
+          <p class="muted">ArcQSO validates the exchange, enforces the right dupe rules, scores in real time, and exports a ready-to-submit Cabrillo file.</p>
+        </div>
+        <div class="contest-grid">
+          <div class="contest">All 50 state QSO parties</div>
+          <div class="contest">ARRL & CQ contests</div>
+          <div class="contest">IARU</div>
+          <div class="contest">Field Day / Winter Field Day</div>
+          <div class="contest">NAQP</div>
+          <div class="contest">Sweepstakes</div>
+          <div class="contest">WAE</div>
+          <div class="contest">POTA & Ohio parks on the air</div>
+        </div>
+      </div>
+    </section>
+    <section id="platforms">
+      <div class="wrap platforms-big">
+        <div>
+          <p class="kicker">Cross-platform</p>
+          <h2>Native on the desk. Simple in the field.</h2>
+          <p class="muted">Desktop is a native installer for Windows, macOS and Linux — logging, rig control, CW and FT8. The iPhone and Android apps are logging-first: capture the QSO when you are away from the radio.</p>
+          <div class="os-list" style="margin-top:22px;">
+            <div class="os"><strong>Windows</strong><p class="muted">Native installer</p></div>
+            <div class="os"><strong>macOS</strong><p class="muted">Native installer</p></div>
+            <div class="os"><strong>Linux</strong><p class="muted">Native installer</p></div>
+            <div class="os"><strong>iPhone & Android</strong><p class="muted">Logging only</p></div>
+          </div>
+        </div>
+        <div class="phone">
+          <div class="phone-bar"><span>9:41</span><span>ArcQSO</span></div>
+          <div class="call-field" style="font-size:1.4rem;margin-top:16px;">W3ABC</div>
+          <p class="muted" style="margin-top:10px;">Park activation · 20 m SSB</p>
+          <div class="phone-tabs"><span class="on">Log</span><span>Stations</span><span>Map</span><span>More</span></div>
+        </div>
+      </div>
+    </section>
+    <section>
+      <div class="wrap privacy">
+        <div>
+          <p class="kicker">Trustworthy</p>
+          <h2>No account. No cloud. No subscription.</h2>
+          <p class="muted">Data lives on your machine in plain JSON. Designed by operators, for operators — from first-time special event volunteers to serious contesters.</p>
+        </div>
+        <p class="script">Good operators keep the world in touch.</p>
+      </div>
+    </section>
+    <section id="download">
+      <div class="wrap" style="text-align:center;">
+        <p class="kicker">Any band. Any mode. A brighter tomorrow.</p>
+        <h2>Get ArcQSO</h2>
+        <p class="muted" style="max-width:560px;margin:0 auto 24px;">Desktop installers and mobile apps. Replace the download links below when the builds are ready.</p>
+        <div class="hero-actions" style="justify-content:center;">
+          <a class="btn btn-primary" href="#">Windows</a>
+          <a class="btn btn-ghost" href="#">macOS</a>
+          <a class="btn btn-ghost" href="#">Linux</a>
+          <a class="btn btn-ghost" href="#">iOS</a>
+          <a class="btn btn-ghost" href="#">Android</a>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <div class="wrap foot">
+      <span>ArcQSO · Log. Control. Connect.</span>
+      <span>Logging · Rig control · CW · FT8 · Across platforms</span>
+      <span>arcqso.com</span>
+    </div>
+  </footer>
+  <script src="app.js"></script>
+</body>
+</html>
