@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>ArcQSO — Log. Control. Connect.</title>
+  <meta name="description" content="Own ArcQSO. Desktop $9.99. Mobile $4.99. A logger built for the operating table." />
+  <link rel="icon" href="/assets/logo.svg" type="image/svg+xml" />
+  <link rel="stylesheet" href="/styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@500;700&family=Inter:wght@400;500;600;700&family=Sora:wght@600;700&display=swap" rel="stylesheet" />
+</head>
+<body>
+  <div class="rail">
+    <a class="rail-brand" href="#top"><img src="/assets/logo.svg" alt="" />Arc<b>QSO</b></a>
+    <nav><a href="#table">The table</a><a href="#radio">Radio</a><a href="#contests">Contests</a><a href="#buy">Licenses</a></nav>
+    <div class="tx"><i class="led"></i> ON AIR · <span id="utc" class="mono">0000z</span></div>
+  </div>
+  <header class="op" id="top">
+    <div class="sky"></div>
+    <div class="rings"><i></i><i></i><i></i><i></i><span class="mark"></span></div>
+    <div class="frame op-copy">
+      <p class="hand">Good operators keep the world in touch.</p>
+      <h1>Log.<br>Control.<br><span>Connect.</span></h1>
+      <p class="sub">A desktop logger you can read from across the shack. Rig control, CW and FT8 on the computer. A pocket log on the phone. Buy it once.</p>
+      <div class="buy-row">
+        <a class="btn btn-go" href="#buy">Own desktop — $9.99</a>
+        <a class="btn btn-ghost" href="#buy">Phone log — $4.99</a>
+      </div>
+    </div>
+    <div class="logger">
+      <div class="frame logger-grid">
+        <div class="cell"><div class="label">UTC</div><div class="mono" id="utc2">00:00:00</div></div>
+        <div class="cell"><div class="label">Callsign</div><div class="call" id="typed"></div></div>
+        <div class="cell"><div class="label">Freq</div><div class="mono">14.074</div></div>
+        <div class="cell"><div class="label">Mode</div><div>FT8</div></div>
+        <div class="cell"><div class="label">Grid / DX</div><div>FN42 · USA</div></div>
+        <div class="cell"><div class="label">Status</div><div style="color:#FF9500">QSO</div></div>
+      </div>
+    </div>
+  </header>
+  <section id="table">
+    <article class="story"><div class="freq">14.074 · FT8</div><div class="beat"><h2>The callsign is the whole screen.</h2><p>Type a call. UTC stamps itself. Band, frequency and mode ride over from the last contact. Lookups fill name, grid and country while you are still talking. Dupes light up before you waste the exchange.</p></div></article>
+    <article class="story"><div class="freq">Great circle</div><div class="beat"><h2>Every QSO draws an arc.</h2><p>Contacts land on an interactive 3D globe as colored paths from your station to theirs. ADIF in and out for LoTW, QRZ and eQSL.</p></div></article>
+    <article class="story" id="radio"><div class="freq">CAT · CW · FT8</div><div class="beat"><h2>The radio and the log share a brain.</h2><p>Hamlib, flrig, or direct serial CAT. CW keyer and decoder. WSJT-X for FT8/FT4.</p></div></article>
+    <article class="story"><div class="freq">JSON on disk</div><div class="beat"><h2>No cloud. No seat. No meter running.</h2><p>Plain JSON on your machine. Major upgrades discounted for owners.</p></div></article>
+  </section>
+  <section class="qsl" id="buy">
+    <div class="frame">
+      <h2>Two licenses. You keep them.</h2>
+      <div class="qsl-grid">
+        <div class="ticket"><span class="stamp">OWN<br>IT</span><header><span>Station license</span><span>Desktop</span></header><h3>Windows · macOS · Linux</h3><div class="amt">$9.99</div><a class="btn btn-go" href="#">Buy desktop</a></div>
+        <div class="ticket"><header><span>Field license</span><span>Mobile</span></header><h3>iPhone · Android</h3><div class="amt">$4.99</div><a class="btn btn-ghost" href="#" style="border-color:#0B1B2B;color:#0B1B2B">Buy mobile</a></div>
+      </div>
+    </div>
+  </section>
+  <section class="wall" id="contests"><div class="frame"><h2>The exchange changes. The form changes with it.</h2></div></section>
+  <footer class="frame"><span>arcqso.com</span></footer>
+  <script src="/app.js"></script>
+</body>
+</html>

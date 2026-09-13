@@ -5,16 +5,16 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>ArcQSO — Log. Control. Connect.</title>
   <meta name="description" content="Own ArcQSO. Desktop $9.99. Mobile $4.99. A logger built for the operating table." />
-  <link rel="icon" href="assets/logo.svg" type="image/svg+xml" />
+  <link rel="icon" href="/assets/logo.svg" type="image/svg+xml" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@500;700&family=Inter:wght@400;500;600;700&family=Sora:wght@600;700&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="/styles.css" />
 </head>
 <body>
   <div class="rail">
     <a class="rail-brand" href="#top">
-      <img src="assets/logo.svg" alt="" />
+      <img src="/assets/logo.svg" alt="" />
       Arc<b>QSO</b>
     </a>
     <nav>
@@ -25,7 +25,6 @@
     </nav>
     <div class="tx"><i class="led"></i> ON AIR · <span id="utc" class="mono">0000z</span></div>
   </div>
-
   <header class="op" id="top">
     <div class="sky"></div>
     <div class="rings"><i></i><i></i><i></i><i></i><span class="mark"></span></div>
@@ -40,68 +39,21 @@
     </div>
     <div class="logger">
       <div class="frame logger-grid">
-        <div class="cell">
-          <div class="label">UTC</div>
-          <div class="mono" id="utc2">00:00:00</div>
-        </div>
-        <div class="cell">
-          <div class="label">Callsign</div>
-          <div class="call" id="typed"></div>
-        </div>
-        <div class="cell">
-          <div class="label">Freq</div>
-          <div class="mono">14.074</div>
-        </div>
-        <div class="cell">
-          <div class="label">Mode</div>
-          <div>FT8</div>
-        </div>
-        <div class="cell">
-          <div class="label">Grid / DX</div>
-          <div>FN42 · USA</div>
-        </div>
-        <div class="cell">
-          <div class="label">Status</div>
-          <div style="color:#FF9500">QSO</div>
-        </div>
+        <div class="cell"><div class="label">UTC</div><div class="mono" id="utc2">00:00:00</div></div>
+        <div class="cell"><div class="label">Callsign</div><div class="call" id="typed"></div></div>
+        <div class="cell"><div class="label">Freq</div><div class="mono">14.074</div></div>
+        <div class="cell"><div class="label">Mode</div><div>FT8</div></div>
+        <div class="cell"><div class="label">Grid / DX</div><div>FN42 · USA</div></div>
+        <div class="cell"><div class="label">Status</div><div style="color:#FF9500">QSO</div></div>
       </div>
     </div>
   </header>
-
   <section id="table">
-    <article class="story">
-      <div class="freq">14.074 · FT8</div>
-      <div class="beat">
-        <h2>The callsign is the whole screen.</h2>
-        <p>Type a call. UTC stamps itself. Band, frequency and mode ride over from the last contact. QRZ, HamQTH or FCC Callook fills name, grid and country while you are still talking. Dupes light up before you waste the exchange. The other station’s photo flashes over the map.</p>
-      </div>
-    </article>
-    <article class="story">
-      <div class="freq">Great circle</div>
-      <div class="beat">
-        <h2>Every QSO draws an arc.</h2>
-        <p>Contacts land on an interactive 3D globe as colored paths from your station to theirs. Filter 20 m. Filter 40 m. Keep a log per event, per day, or per callsign. Change operator mid-log. ADIF in and out for LoTW, QRZ, eQSL and anyone else who still speaks ham.</p>
-      </div>
-    </article>
-    <article class="story" id="radio">
-      <div class="freq">CAT · CW · FT8</div>
-      <div class="beat">
-        <h2>The radio and the log share a brain.</h2>
-        <p>Hamlib, flrig, or a direct serial CAT lead to Kenwood, Elecraft, Yaesu, Icom and Flex SmartSDR. Tune in the log, the radio follows. A CW window with twelve macros, Winkeyer, sidetone and a sound-card decoder. RBN and Skimmer drop the call in before you finish copying. WSJT-X streams FT8/FT4; completed QSOs write themselves.</p>
-        <div class="specs">
-          <em>Winkeyer</em><em>rig-internal keying</em><em>serial</em><em>Hamlib</em><em>flrig</em><em>WSJT-X</em>
-        </div>
-      </div>
-    </article>
-    <article class="story">
-      <div class="freq">JSON on disk</div>
-      <div class="beat">
-        <h2>No cloud. No seat. No meter running.</h2>
-        <p>Data lives in plain JSON on your machine. The version you buy keeps working. Minor fixes travel with it. A major version is optional — and cheaper if you already hold a license. Manual ships in the installer.</p>
-      </div>
-    </article>
+    <article class="story"><div class="freq">14.074 · FT8</div><div class="beat"><h2>The callsign is the whole screen.</h2><p>Type a call. UTC stamps itself. Band, frequency and mode ride over from the last contact. QRZ, HamQTH or FCC Callook fills name, grid and country while you are still talking. Dupes light up before you waste the exchange. The other station’s photo flashes over the map.</p></div></article>
+    <article class="story"><div class="freq">Great circle</div><div class="beat"><h2>Every QSO draws an arc.</h2><p>Contacts land on an interactive 3D globe as colored paths from your station to theirs. Filter 20 m. Filter 40 m. Keep a log per event, per day, or per callsign. Change operator mid-log. ADIF in and out for LoTW, QRZ, eQSL and anyone else who still speaks ham.</p></div></article>
+    <article class="story" id="radio"><div class="freq">CAT · CW · FT8</div><div class="beat"><h2>The radio and the log share a brain.</h2><p>Hamlib, flrig, or a direct serial CAT lead to Kenwood, Elecraft, Yaesu, Icom and Flex SmartSDR. Tune in the log, the radio follows. A CW window with twelve macros, Winkeyer, sidetone and a sound-card decoder. RBN and Skimmer drop the call in before you finish copying. WSJT-X streams FT8/FT4; completed QSOs write themselves.</p><div class="specs"><em>Winkeyer</em><em>rig-internal keying</em><em>serial</em><em>Hamlib</em><em>flrig</em><em>WSJT-X</em></div></div></article>
+    <article class="story"><div class="freq">JSON on disk</div><div class="beat"><h2>No cloud. No seat. No meter running.</h2><p>Data lives in plain JSON on your machine. The version you buy keeps working. Minor fixes travel with it. A major version is optional — and cheaper if you already hold a license. Manual ships in the installer.</p></div></article>
   </section>
-
   <section class="qsl" id="buy">
     <div class="frame">
       <h2>Two licenses. You keep them.</h2>
@@ -136,34 +88,21 @@
       </div>
     </div>
   </section>
-
   <section class="wall" id="contests">
     <div class="frame">
       <h2>The exchange changes. The form changes with it.</h2>
       <p>More than seventy profiles. Real-time scoring. Ready-to-submit Cabrillo.</p>
       <div class="names">
-        <span>All 50 state QSO parties</span>
-        <span>ARRL DX</span>
-        <span>CQ WW</span>
-        <span>CQ WPX</span>
-        <span>IARU</span>
-        <span>Field Day</span>
-        <span>Winter Field Day</span>
-        <span>NAQP</span>
-        <span>Sweepstakes</span>
-        <span>WAE</span>
-        <span>POTA</span>
-        <span>Ohio State Parks on the Air</span>
+        <span>All 50 state QSO parties</span><span>ARRL DX</span><span>CQ WW</span><span>CQ WPX</span><span>IARU</span><span>Field Day</span><span>Winter Field Day</span><span>NAQP</span><span>Sweepstakes</span><span>WAE</span><span>POTA</span><span>Ohio State Parks on the Air</span>
       </div>
       <p class="legal">Desktop and mobile are separate purchases. Checkout buttons wait on payment links. Your copy does not phone home.</p>
     </div>
   </section>
-
   <footer class="frame">
     <span>ArcQSO · Log. Control. Connect.</span>
     <span>Desktop $9.99 · Mobile $4.99 · owners upgrade at a discount</span>
     <span>arcqso.com</span>
   </footer>
-  <script src="app.js"></script>
+  <script src="/app.js"></script>
 </body>
 </html>
