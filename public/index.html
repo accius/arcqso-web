@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>ArcQSO — Log. Control. Connect.</title>
-  <meta name="description" content="ArcQSO yearly amateur radio logging. Desktop $9.99/year. Mobile $4.99/year. From the creator of OpenHamClock." />
+  <meta name="description" content="ArcQSO yearly amateur radio logging. From the creator of OpenHamClock. Desktop $9.99/year. Mobile $4.99/year." />
   <link rel="icon" href="/assets/mark.svg" type="image/svg+xml" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -17,24 +17,37 @@
     <nav>
       <a href="#table">Logger</a>
       <a href="#radio">Radio</a>
-      <a href="#team">Team</a>
-      <a href="#contests">Contests</a>
       <a href="#buy">Plans</a>
       <a href="/account.html">Account</a>
     </nav>
     <div class="tx"><i class="led"></i> ON AIR · <span id="utc" class="mono">0000z</span></div>
   </div>
-  <header class="op" id="top">
-    <div class="sky"></div>
-    <div class="rings"><i></i><i></i><i></i><i></i><span class="mark"></span></div>
-    <div class="frame op-copy">
-      <p class="ohc">From the creator of OpenHamClock</p>
-      <p class="hand">Built for the operating table.</p>
-      <h1>Log.<br>Control.<br><span>Connect.</span></h1>
-      <p class="sub">A native logger for special events, contests, parks, summits and everyday DX. Rig control, CW and FT8 on the computer. A pocket log on the phone. Yearly plans. Cancel any time.</p>
-      <div class="buy-row">
-        <a class="btn btn-go" href="/account.html">Desktop — $9.99 / year</a>
-        <a class="btn btn-ghost" href="/account.html">Phone — $4.99 / year</a>
+  <header class="hero" id="top">
+    <div class="hero-grid frame">
+      <div class="hero-copy">
+        <p class="ohc">From the creator of OpenHamClock</p>
+        <p class="kicker">Modern tools for a more connected amateur radio world.</p>
+        <p class="bandline">Any band. Any mode. A brighter tomorrow.</p>
+        <h1>Log.<br>Control.<br><span>Connect.</span></h1>
+        <p class="hand">Good Operators Keep the World in Touch.</p>
+        <p class="sub">A native logger for special events, contests, parks, summits and everyday DX. Yearly plans for desktop and phone.</p>
+        <p class="platforms">Windows · macOS · iPhone · Android</p>
+        <div class="buy-row">
+          <a class="btn btn-go" href="/account.html">Desktop — $9.99 / year</a>
+          <a class="btn btn-ghost" href="/account.html">Phone — $4.99 / year</a>
+        </div>
+      </div>
+      <div class="hero-vista" aria-hidden="true">
+        <div class="vista-photo"></div>
+        <div class="rings"><i></i><i></i><i></i><i></i></div>
+        <svg class="tower" viewBox="0 0 80 160" fill="none">
+          <path d="M40 8 L36 28 H44 Z" fill="#F3F6FA"/>
+          <path d="M38 28 L28 150 H52 L42 28 Z" stroke="#F3F6FA" stroke-width="2" fill="rgba(243,246,250,.08)"/>
+          <path d="M24 70 H56 M20 110 H60" stroke="#00D4FF" stroke-width="1.5"/>
+        </svg>
+        <ul class="vista-words">
+          <li>People</li><li>Radio</li><li>Logs</li><li>A brighter world</li>
+        </ul>
       </div>
     </div>
     <div class="logger">
@@ -47,57 +60,25 @@
         <div class="cell"><div class="label">Status</div><div style="color:#FF9500">QSO</div></div>
       </div>
     </div>
-    <div class="frame shot-wrap">
-      <img class="app-shot" src="/shots/overview.jpg" alt="ArcQSO split view" />
-    </div>
   </header>
   <section id="table">
-    <article class="story"><div class="freq">Entry</div><div class="beat"><h2>Type the call. The rest keeps up.</h2><p>UTC stamps when you start typing. Band, frequency and mode ride over. QRZ, HamQTH or Callook fill the rest. Dupes fire before you waste the exchange.</p></div></article>
-    <article class="story"><div class="freq">Great circle</div><div class="beat"><h2>Every QSO draws an arc.</h2><p>Contacts plot on a rotating 3D globe from your grid. Needed multipliers light up as you work them.</p><img class="inline-shot" src="/shots/globe.jpg" alt="ArcQSO globe" /></div></article>
-    <article class="story" id="radio"><div class="freq">CAT · CW · FT8</div><div class="beat"><h2>The radio and the log share a brain.</h2><p>Hamlib, flrig, or direct serial CAT. CW macros and decoder. WSJT-X for FT8/FT4.</p><div class="shot-pair"><img class="inline-shot" src="/shots/cwwin.jpg" alt="CW window" /><img class="inline-shot" src="/shots/digital.jpg" alt="Digital window" /></div></div></article>
-    <article class="story" id="team"><div class="freq">Net log</div><div class="beat"><h2>One log. Several chairs.</h2><p>Host on a desktop. Join from another computer or the phone. Team-wide dupes and chat.</p></div></article>
-    <article class="story"><div class="freq">JSON on disk</div><div class="beat"><h2>The log stays in the shack.</h2><p>Contacts are plain JSON on your machine. The yearly plan is only the license.</p></div></article>
+    <article class="story"><div class="freq">Entry</div><div class="beat"><h2>Type the call. The rest keeps up.</h2><p>UTC stamps when you start typing. Lookups and dupes keep up while you talk.</p></div></article>
+    <article class="story"><div class="freq">Great circle</div><div class="beat"><h2>Every QSO draws an arc.</h2><p>Contacts plot on a rotating 3D globe from your grid.</p><img class="inline-shot" src="/shots/globe.jpg" alt="Globe" /></div></article>
+    <article class="story" id="radio"><div class="freq">CAT · CW · FT8</div><div class="beat"><h2>The radio and the log share a brain.</h2><p>Rig control, CW keyer, WSJT-X.</p><div class="shot-pair"><img class="inline-shot" src="/shots/cwwin.jpg" alt="CW" /><img class="inline-shot" src="/shots/digital.jpg" alt="FT8" /></div></div></article>
+    <article class="story"><div class="freq">JSON on disk</div><div class="beat"><h2>The log stays in the shack.</h2><p>The yearly plan is only the license.</p></div></article>
   </section>
   <section class="qsl" id="buy">
     <div class="frame">
       <h2>Two yearly plans.</h2>
       <div class="qsl-grid">
-        <div class="ticket">
-          <span class="stamp">PER<br>YEAR</span>
-          <header><span>Station plan</span><span>Desktop</span></header>
-          <h3>Windows · macOS · Linux</h3>
-          <div class="amt">$9.99<span style="font-size:1rem"> / year</span></div>
-          <ul>
-            <li>Logger, globe, contests, team host</li>
-            <li>Rig control, CW, FT8</li>
-            <li>Cancel any time from your account</li>
-          </ul>
-          <a class="btn btn-go" href="/account.html">Subscribe desktop</a>
-        </div>
-        <div class="ticket">
-          <header><span>Field plan</span><span>Mobile</span></header>
-          <h3>iPhone · Android</h3>
-          <div class="amt">$4.99<span style="font-size:1rem"> / year</span></div>
-          <ul>
-            <li>Logger, lookup, globe, team join</li>
-            <li>No CAT, no keyer, no WSJT-X</li>
-          </ul>
-          <a class="btn btn-ghost" href="/account.html" style="border-color:#0B1B2B;color:#0B1B2B">Subscribe mobile</a>
-        </div>
+        <div class="ticket"><span class="stamp">PER<br>YEAR</span><header><span>Station plan</span><span>Desktop</span></header><h3>Windows · macOS · Linux</h3><div class="amt">$9.99<span style="font-size:1rem"> / year</span></div><a class="btn btn-go" href="/account.html">Subscribe desktop</a></div>
+        <div class="ticket"><header><span>Field plan</span><span>Mobile</span></header><h3>iPhone · Android</h3><div class="amt">$4.99<span style="font-size:1rem"> / year</span></div><a class="btn btn-ghost" href="/account.html" style="border-color:#0B1B2B;color:#0B1B2B">Subscribe mobile</a></div>
       </div>
     </div>
   </section>
-  <section class="wall" id="contests">
-    <div class="frame">
-      <h2>The exchange changes. The form changes with it.</h2>
-      <p>More than seventy profiles. Real-time scoring. Cabrillo ready to submit.</p>
-      <div class="names"><span>All 50 state QSO parties</span><span>ARRL DX</span><span>CQ WW</span><span>Field Day</span><span>POTA</span><span>Sweepstakes</span></div>
-      <p class="legal">Desktop and mobile are separate yearly subscriptions. Manage card and cancel from your account.</p>
-    </div>
-  </section>
   <footer class="frame">
-    <span>ArcQSO · Log. Control. Connect.</span>
-    <span>From the creator of OpenHamClock · Desktop $9.99/yr · Mobile $4.99/yr</span>
+    <span>From the creator of OpenHamClock</span>
+    <span>Desktop $9.99/yr · Mobile $4.99/yr</span>
     <span>arcqso.com</span>
   </footer>
   <script src="/app.js"></script>
