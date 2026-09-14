@@ -1,40 +1,235 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#081828">
   <title>ArcQSO — Log. Control. Connect.</title>
-  <link rel="icon" href="/assets/mark.svg" type="image/svg+xml" />
-  <link rel="stylesheet" href="/styles.css" />
+  <meta name="description" content="ArcQSO is a modern amateur radio logger with rig control, CW and FT8 tools on desktop, plus simple mobile logging for the field.">
+  <link rel="icon" href="./assets/mark.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Sora:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./styles.css">
 </head>
 <body>
-  <div class="rail">
-    <a class="rail-brand" href="#top"><img src="/assets/mark.svg" alt="" />Arc<b>QSO</b></a>
-    <nav><a href="#buy">Plans</a><a href="/account.html">Account</a></nav>
-    <div class="tx"><i class="led"></i> ON AIR</div>
-  </div>
-  <header class="op" id="top">
-    <div class="sky"></div>
-    <div class="frame op-copy">
-      <p class="ohc">From the creator of OpenHamClock</p>
-      <h1>Log.<br>Control.<br><span>Connect.</span></h1>
-      <p class="sub">Yearly plans. Desktop $9.99. Mobile $4.99. Cancel any time.</p>
-      <div class="buy-row">
-        <a class="btn btn-go" href="/account.html">Desktop — $9.99 / year</a>
-        <a class="btn btn-ghost" href="/account.html">Phone — $4.99 / year</a>
-      </div>
+  <header class="site-header" id="top">
+    <div class="frame nav-shell">
+      <a class="brand" href="#top" aria-label="ArcQSO home">
+        <img src="./assets/mark.svg" alt="">
+        <span>Arc<b>QSO</b></span>
+      </a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
+        <span></span><span></span><span></span><span class="sr-only">Toggle menu</span>
+      </button>
+      <nav class="site-nav" id="site-nav" aria-label="Main navigation">
+        <a href="#features">Features</a>
+        <a href="#desktop">Desktop</a>
+        <a href="#mobile">Mobile</a>
+        <a href="#plans">Plans</a>
+      </nav>
+      <a class="nav-account" href="./account.html">My account <span aria-hidden="true">↗</span></a>
     </div>
   </header>
-  <section class="qsl" id="buy">
-    <div class="frame">
-      <h2>Two yearly plans.</h2>
-      <div class="qsl-grid">
-        <div class="ticket"><span class="stamp">PER<br>YEAR</span><h3>Desktop</h3><div class="amt">$9.99 / year</div><a class="btn btn-go" href="/account.html">Subscribe desktop</a></div>
-        <div class="ticket"><h3>Mobile</h3><div class="amt">$4.99 / year</div><a class="btn btn-ghost" href="/account.html" style="border-color:#0B1B2B;color:#0B1B2B">Subscribe mobile</a></div>
+
+  <main>
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="signal-field" aria-hidden="true"><span></span><span></span><span></span><span></span></div>
+      <div class="frame hero-grid">
+        <div class="hero-copy">
+          <div class="eyebrow"><i></i> Modern amateur radio logging</div>
+          <h1 id="hero-title">Log.<br>Control.<br><em>Connect.</em></h1>
+          <p class="hero-lead">Log contacts, control your rig, work CW and follow FT8—all in one focused desktop app. Take fast, simple logging into the field on your phone.</p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="./account.html">Get ArcQSO <span aria-hidden="true">→</span></a>
+            <a class="text-link" href="#desktop">Explore the station <span aria-hidden="true">↓</span></a>
+          </div>
+          <div class="platform-row" role="group" aria-label="Supported platforms">
+            <span>Windows</span><i></i><span>macOS</span><i></i><span>iPhone</span><i></i><span>Android</span>
+          </div>
+        </div>
+
+        <div class="hero-product">
+          <div class="orbit orbit-one" aria-hidden="true"></div>
+          <div class="orbit orbit-two" aria-hidden="true"></div>
+          <div class="app-window">
+            <div class="window-bar">
+              <div class="window-brand"><img src="./assets/mark.svg" alt=""><span>Arc<b>QSO</b></span></div>
+              <div class="window-status"><i></i> Station online</div>
+              <div class="window-controls"><span></span><span></span><span></span></div>
+            </div>
+            <img src="./shots/overview.jpg" alt="ArcQSO desktop logger showing contact details and an interactive globe">
+          </div>
+          <div class="data-card data-card-top" aria-hidden="true">
+            <span class="data-label">DX contact</span><strong>EA5JAO</strong><small>20m · SSB · IM98</small>
+          </div>
+          <div class="data-card data-card-bottom" aria-hidden="true">
+            <span class="data-label">Logged</span><strong>W1AW</strong><small>14.250 MHz · 23:22z</small>
+          </div>
+        </div>
       </div>
+      <div class="frame hero-footer">
+        <p>From the creator of <a href="https://openhamclock.com" target="_blank" rel="noreferrer">OpenHamClock <span aria-hidden="true">↗</span></a></p>
+        <p class="brand-line">Log. Control. Connect.</p>
+      </div>
+    </section>
+
+    <section class="proof-strip" aria-label="ArcQSO capabilities">
+      <div class="frame proof-grid">
+        <div><strong>01</strong><span>Fast QSO entry</span></div>
+        <div><strong>02</strong><span>Live rig control</span></div>
+        <div><strong>03</strong><span>CW + FT8 tools</span></div>
+        <div><strong>04</strong><span>Desktop + mobile</span></div>
+      </div>
+    </section>
+
+    <section class="intro section" id="features">
+      <div class="frame intro-grid">
+        <div>
+          <p class="section-kicker">Built around the operator</p>
+          <h2>The logbook should disappear into the contact.</h2>
+        </div>
+        <div class="intro-copy">
+          <p>ArcQSO keeps the information you need in reach without crowding the conversation. It is precise enough for contest pace, visual enough to make every contact memorable, and calm enough for an evening in the shack.</p>
+          <div class="attribute-list" role="group" aria-label="Brand attributes">
+            <span>Precise</span><span>Connected</span><span>Modern</span><span>Operator-focused</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="showcase section" id="desktop">
+      <div class="frame">
+        <div class="section-heading">
+          <div>
+            <p class="section-kicker">Desktop command center</p>
+            <h2>Everything moves together.</h2>
+          </div>
+          <p>One workspace connects your log, radio and operating tools—so the station stays in sync while you stay on the air.</p>
+        </div>
+        <div class="product-stage">
+          <div class="stage-glow" aria-hidden="true"></div>
+          <img src="./shots/overview.jpg" alt="ArcQSO desktop interface in split log and globe view">
+          <div class="stage-caption"><span>Live station view</span><strong>Log + globe</strong></div>
+        </div>
+        <div class="feature-grid">
+          <article class="feature-card feature-card-wide">
+            <span class="feature-number">01 / LOG</span>
+            <h3>Type the call.<br>The rest keeps up.</h3>
+            <p>Capture time automatically, keep frequency and mode close, spot duplicates and move through a contact without breaking rhythm.</p>
+            <div class="mini-log" aria-hidden="true">
+              <span class="mini-label">Callsign</span><strong id="typed"></strong><span class="cursor"></span>
+              <div><span>14.250</span><span>SSB</span><span id="utc">00:00:00z</span></div>
+            </div>
+          </article>
+          <article class="feature-card feature-card-image">
+            <span class="feature-number">02 / MAP</span>
+            <h3>Every QSO draws an arc.</h3>
+            <p>See your contacts travel across a rotating globe from your station grid.</p>
+            <img src="./shots/globe.jpg" alt="ArcQSO globe view with contact arcs">
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="modes section" id="modes">
+      <div class="frame modes-grid">
+        <div class="modes-copy">
+          <p class="section-kicker">Made for how you operate</p>
+          <h2>Your radio and your log share a brain.</h2>
+          <p>ArcQSO brings the station workflow into the log instead of making you stitch together a row of unrelated windows.</p>
+          <div class="mode-list">
+            <div><span>CAT</span><p>Keep band, frequency and mode aligned with the radio.</p></div>
+            <div><span>CW</span><p>Use a focused keyer, macros and decoder alongside the log.</p></div>
+            <div><span>FT8</span><p>Follow WSJT-X activity and capture digital contacts cleanly.</p></div>
+          </div>
+        </div>
+        <div class="mode-stack">
+          <figure class="mode-shot mode-shot-cw">
+            <img src="./shots/cwwin.jpg" alt="ArcQSO CW keyer and decoder">
+            <figcaption><span>CW workspace</span><strong>22 WPM</strong></figcaption>
+          </figure>
+          <figure class="mode-shot mode-shot-ft8">
+            <img src="./shots/digital.jpg" alt="ArcQSO FT8 activity window">
+            <figcaption><span>WSJT-X connected</span><strong>14.074</strong></figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <section class="mobile section" id="mobile">
+      <div class="frame mobile-grid">
+        <div class="phone-wrap" aria-hidden="true">
+          <div class="phone-orbit"></div>
+          <div class="phone">
+            <div class="phone-island"></div>
+            <div class="phone-screen">
+              <div class="phone-logo"><img src="./assets/mark.svg" alt=""><span>Arc<b>QSO</b></span></div>
+              <p>Field log</p>
+              <div class="phone-call">K2ABC</div>
+              <div class="phone-fields"><span>20m</span><span>14.250</span><span>SSB</span></div>
+              <button type="button" tabindex="-1">Log QSO</button>
+              <div class="phone-history"><i></i><span><b>W1AW</b><small>20m · SSB</small></span><time>14:22</time></div>
+              <div class="phone-history"><i></i><span><b>VE3STU</b><small>40m · CW</small></span><time>14:09</time></div>
+              <div class="phone-history"><i></i><span><b>EA5JAO</b><small>20m · FT8</small></span><time>13:51</time></div>
+            </div>
+          </div>
+        </div>
+        <div class="mobile-copy">
+          <p class="section-kicker">A clear field log</p>
+          <h2>Leave the station.<br>Keep the log.</h2>
+          <p>The mobile app stays intentionally simple: quick logging for parks, summits, special events and anywhere the radio takes you.</p>
+          <ul class="check-list"><li>Fast contact entry</li><li>Built for iPhone and Android</li><li>The same operator-focused design</li></ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="plans section" id="plans">
+      <div class="frame">
+        <div class="plans-heading">
+          <p class="section-kicker">Simple yearly plans</p>
+          <h2>Choose where you operate.</h2>
+          <p>Start with the full station experience or keep a logger in your pocket.</p>
+        </div>
+        <div class="plan-grid">
+          <article class="plan-card plan-card-featured">
+            <div class="plan-top"><span>Station plan</span><span class="plan-pill">Desktop</span></div>
+            <div class="plan-price"><strong>$9.99</strong><span>/ year</span></div>
+            <p>For Windows, macOS and Linux with logging, rig control, CW and FT8 tools.</p>
+            <ul><li>Full desktop logger</li><li>Rig integration</li><li>CW + digital workflow</li></ul>
+            <a class="btn btn-primary" href="./account.html">Choose desktop <span aria-hidden="true">→</span></a>
+          </article>
+          <article class="plan-card">
+            <div class="plan-top"><span>Field plan</span><span class="plan-pill">Mobile</span></div>
+            <div class="plan-price"><strong>$4.99</strong><span>/ year</span></div>
+            <p>For iPhone and Android when you want a focused log away from the desk.</p>
+            <ul><li>Fast mobile logging</li><li>Field-friendly layout</li><li>One affordable yearly plan</li></ul>
+            <a class="btn btn-outline" href="./account.html">Choose mobile <span aria-hidden="true">→</span></a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="closing">
+      <div class="closing-rings" aria-hidden="true"><i></i><i></i><i></i></div>
+      <div class="frame closing-inner">
+        <img src="./assets/mark.svg" alt="">
+        <p class="section-kicker">Any band. Any mode.</p>
+        <h2>Make the next contact count.</h2>
+        <p>Modern tools for a more connected amateur radio world.</p>
+        <a class="btn btn-primary" href="./account.html">Get ArcQSO <span aria-hidden="true">→</span></a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="frame footer-grid">
+      <a class="brand footer-brand" href="#top"><img src="./assets/mark.svg" alt=""><span>Arc<b>QSO</b></span></a>
+      <p>Log. Control. Connect.</p>
+      <div><a href="#features">Features</a><a href="#plans">Plans</a><a href="./account.html">Account</a></div>
+      <p>© <span id="year"></span> ArcQSO</p>
     </div>
-  </section>
-  <footer class="frame"><span>From the creator of OpenHamClock</span></footer>
-  <script src="/app.js"></script>
+  </footer>
+  <script src="./app.js"></script>
 </body>
 </html>
