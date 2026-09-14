@@ -4,8 +4,8 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>ArcQSO — Log. Control. Connect.</title>
-  <meta name="description" content="Own ArcQSO. Desktop $9.99. Mobile $4.99. A logger built for the operating table." />
-  <link rel="icon" href="/assets/logo.svg" type="image/svg+xml" />
+  <meta name="description" content="ArcQSO is a buy-once amateur radio logger for Windows, macOS and Linux. Rig control, CW, FT8. Phone app for logging. Desktop $9.99. Mobile $4.99." />
+  <link rel="icon" href="/assets/mark.svg" type="image/svg+xml" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@500;700&family=Inter:wght@400;500;600;700&family=Sora:wght@600;700&display=swap" rel="stylesheet" />
@@ -14,12 +14,13 @@
 <body>
   <div class="rail">
     <a class="rail-brand" href="#top">
-      <img src="/assets/logo.svg" alt="" />
+      <img src="/assets/mark.svg" alt="" />
       Arc<b>QSO</b>
     </a>
     <nav>
-      <a href="#table">The table</a>
+      <a href="#table">Logger</a>
       <a href="#radio">Radio</a>
+      <a href="#team">Team</a>
       <a href="#contests">Contests</a>
       <a href="#buy">Licenses</a>
     </nav>
@@ -29,9 +30,9 @@
     <div class="sky"></div>
     <div class="rings"><i></i><i></i><i></i><i></i><span class="mark"></span></div>
     <div class="frame op-copy">
-      <p class="hand">Good operators keep the world in touch.</p>
+      <p class="hand">Built for the operating table.</p>
       <h1>Log.<br>Control.<br><span>Connect.</span></h1>
-      <p class="sub">A desktop logger you can read from across the shack. Rig control, CW and FT8 on the computer. A pocket log on the phone. Buy it once.</p>
+      <p class="sub">A native logger for special events, contests, parks, summits and everyday DX. The callsign is big enough to read from the next chair. The radio, the keyer and WSJT-X share the same brain. The phone is a log, not a toy replica of the desktop.</p>
       <div class="buy-row">
         <a class="btn btn-go" href="#buy">Own desktop — $9.99</a>
         <a class="btn btn-ghost" href="#buy">Phone log — $4.99</a>
@@ -41,18 +42,58 @@
       <div class="frame logger-grid">
         <div class="cell"><div class="label">UTC</div><div class="mono" id="utc2">00:00:00</div></div>
         <div class="cell"><div class="label">Callsign</div><div class="call" id="typed"></div></div>
-        <div class="cell"><div class="label">Freq</div><div class="mono">14.074</div></div>
-        <div class="cell"><div class="label">Mode</div><div>FT8</div></div>
-        <div class="cell"><div class="label">Grid / DX</div><div>FN42 · USA</div></div>
+        <div class="cell"><div class="label">Freq</div><div class="mono">14.250</div></div>
+        <div class="cell"><div class="label">Mode</div><div>SSB</div></div>
+        <div class="cell"><div class="label">Grid / DX</div><div>FN31 · W1AW</div></div>
         <div class="cell"><div class="label">Status</div><div style="color:#FF9500">QSO</div></div>
       </div>
     </div>
+    <div class="frame shot-wrap">
+      <img class="app-shot" src="/shots/overview.jpg" alt="ArcQSO split view with giant callsign field, QSO table and 3D globe" />
+    </div>
   </header>
   <section id="table">
-    <article class="story"><div class="freq">14.074 · FT8</div><div class="beat"><h2>The callsign is the whole screen.</h2><p>Type a call. UTC stamps itself. Band, frequency and mode ride over from the last contact. QRZ, HamQTH or FCC Callook fills name, grid and country while you are still talking. Dupes light up before you waste the exchange. The other station’s photo flashes over the map.</p></div></article>
-    <article class="story"><div class="freq">Great circle</div><div class="beat"><h2>Every QSO draws an arc.</h2><p>Contacts land on an interactive 3D globe as colored paths from your station to theirs. Filter 20 m. Filter 40 m. Keep a log per event, per day, or per callsign. Change operator mid-log. ADIF in and out for LoTW, QRZ, eQSL and anyone else who still speaks ham.</p></div></article>
-    <article class="story" id="radio"><div class="freq">CAT · CW · FT8</div><div class="beat"><h2>The radio and the log share a brain.</h2><p>Hamlib, flrig, or a direct serial CAT lead to Kenwood, Elecraft, Yaesu, Icom and Flex SmartSDR. Tune in the log, the radio follows. A CW window with twelve macros, Winkeyer, sidetone and a sound-card decoder. RBN and Skimmer drop the call in before you finish copying. WSJT-X streams FT8/FT4; completed QSOs write themselves.</p><div class="specs"><em>Winkeyer</em><em>rig-internal keying</em><em>serial</em><em>Hamlib</em><em>flrig</em><em>WSJT-X</em></div></div></article>
-    <article class="story"><div class="freq">JSON on disk</div><div class="beat"><h2>No cloud. No seat. No meter running.</h2><p>Data lives in plain JSON on your machine. The version you buy keeps working. Minor fixes travel with it. A major version is optional — and cheaper if you already hold a license. Manual ships in the installer.</p></div></article>
+    <article class="story">
+      <div class="freq">Entry</div>
+      <div class="beat">
+        <h2>Type the call. The rest keeps up.</h2>
+        <p>UTC stamps the instant you start typing. Band, frequency and mode ride over from the last contact. QRZ, HamQTH or free FCC Callook writes name, QTH, grid and country while you are still talking. Dupes fire before you waste the exchange. Offline, your own log and a prefix table still place the station.</p>
+      </div>
+    </article>
+    <article class="story">
+      <div class="freq">Great circle</div>
+      <div class="beat">
+        <h2>Every QSO draws an arc.</h2>
+        <p>Contacts plot on a rotating 3D globe from your grid. Colour is band. Needed multipliers light up as you work them — sections, states, counties, CQ zones, DXCC, grids.</p>
+        <img class="inline-shot" src="/shots/globe.jpg" alt="ArcQSO globe with an arc to EA5JA0" />
+      </div>
+    </article>
+    <article class="story" id="radio">
+      <div class="freq">CAT · CW · FT8</div>
+      <div class="beat">
+        <h2>The radio and the log share a brain.</h2>
+        <p>Hamlib, flrig, or direct serial CAT. The CW window is twelve macros, a decoder, Winkeyer or the radio’s own keyer. RBN and Skimmer fill the call. The Digital window drives WSJT-X; completed FT8/FT4 QSOs write themselves.</p>
+        <div class="specs"><em>Winkeyer</em><em>Hamlib</em><em>flrig</em><em>WSJT-X</em><em>RBN</em><em>CW Skimmer</em></div>
+        <div class="shot-pair">
+          <img class="inline-shot" src="/shots/cwwin.jpg" alt="ArcQSO CW window" />
+          <img class="inline-shot" src="/shots/digital.jpg" alt="ArcQSO Digital window" />
+        </div>
+      </div>
+    </article>
+    <article class="story" id="team">
+      <div class="freq">Net log</div>
+      <div class="beat">
+        <h2>One log. Several chairs.</h2>
+        <p>Host on a desktop. Join from another computer or the phone. Team-wide dupes, band presence, operator scorecard and chat. Spot to OpenHamClock and classic telnet clusters in one send.</p>
+      </div>
+    </article>
+    <article class="story">
+      <div class="freq">JSON on disk</div>
+      <div class="beat">
+        <h2>No account. No cloud. No meter.</h2>
+        <p>Logs per event, day or callsign. Change operator mid-log. ADIF for LoTW, QRZ, Club Log, eQSL. The version you buy keeps working. Major upgrades discounted for owners. Manual on Ctrl+/.</p>
+      </div>
+    </article>
   </section>
   <section class="qsl" id="buy">
     <div class="frame">
@@ -64,8 +105,9 @@
           <h3>Windows · macOS · Linux</h3>
           <div class="amt">$9.99</div>
           <ul>
-            <li>Logger, rig control, CW keyer, FT8 link</li>
-            <li>70+ contest profiles + Cabrillo</li>
+            <li>Logger, globe, contests, team host</li>
+            <li>Rig control, CW keyer + decoder, FT8 link</li>
+            <li>RBN / Skimmer and DX cluster spots</li>
             <li>This version is yours. Minor updates included.</li>
             <li>Major upgrades: discounted for owners</li>
           </ul>
@@ -77,9 +119,10 @@
             <h3>iPhone · Android</h3>
             <div class="amt">$4.99</div>
             <ul>
-              <li>Logging only — no CAT, no keyer</li>
-              <li>Separate from the desktop license</li>
-              <li>Minor updates included</li>
+              <li>Logger, lookup, dupes, multiple logs</li>
+              <li>Globe, DX spots, join a team log</li>
+              <li>No CAT, no keyer, no WSJT-X window</li>
+              <li>Separate purchase from desktop</li>
             </ul>
             <a class="btn btn-ghost" href="#" style="border-color:#0B1B2B;color:#0B1B2B">Buy mobile</a>
           </div>
@@ -91,11 +134,12 @@
   <section class="wall" id="contests">
     <div class="frame">
       <h2>The exchange changes. The form changes with it.</h2>
-      <p>More than seventy profiles. Real-time scoring. Ready-to-submit Cabrillo.</p>
+      <p>Required fields, pick-lists, running claimed score, Cabrillo ready to submit.</p>
+      <img class="app-shot" src="/shots/contest.jpg" alt="ArcQSO contest log" style="margin:18px 0 22px" />
       <div class="names">
-        <span>All 50 state QSO parties</span><span>ARRL DX</span><span>CQ WW</span><span>CQ WPX</span><span>IARU</span><span>Field Day</span><span>Winter Field Day</span><span>NAQP</span><span>Sweepstakes</span><span>WAE</span><span>POTA</span><span>Ohio State Parks on the Air</span>
+        <span>All 50 state QSO parties</span><span>ARRL DX</span><span>CQ WW</span><span>CQ WPX</span><span>IARU HF</span><span>Field Day</span><span>Winter Field Day</span><span>NAQP</span><span>Sweepstakes</span><span>WAE DX</span><span>VHF contests</span><span>POTA</span><span>Park-to-park</span><span>Ohio State Parks on the Air</span>
       </div>
-      <p class="legal">Desktop and mobile are separate purchases. Checkout buttons wait on payment links. Your copy does not phone home.</p>
+      <p class="legal">Desktop and mobile are separate purchases. Checkout links go here when payment is wired. Your copy does not phone home.</p>
     </div>
   </section>
   <footer class="frame">
